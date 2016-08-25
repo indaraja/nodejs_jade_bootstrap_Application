@@ -1,5 +1,54 @@
 extends layout
 
 block content
-  h1 = title
-  p Welcome to #{title}
+  div.container-fluid
+    div.top
+       Fixed navbar
+           div.page-header
+              .navbar.navbar-default.navbar-fixed-top(role='navigation')
+                .container
+                  .navbar-header
+                    ul.nav.navbar-nav
+                      li.active
+                        a(href='#') Schedule Alert
+                      li
+                        a(href='#about') Service alert
+                      li
+                        a(href='#contact') Table Maintainances
+
+
+              // /.nav-collapse
+          .container
+            // Main component for a primary marketing message or call to action
+            .jumbotron
+              br
+              br
+              br
+              h1 Navbar example
+               p
+                a.btn.btn-lg.btn-primary(href='../../components/#navbar', role='button') View navbar docs &raquo;
+    div.content
+      input.js-switch(type='checkbox', checked='')
+      table.table.table-striped
+        thead
+          tr
+            th Table
+            th Heading
+            th indu
+        tbody
+          tr
+            td Blah
+            td Test
+            td 1
+          tr
+            td Hello
+            td World
+            td 2
+          tr
+            td Hello
+            td World
+            td 2
+          tr
+            td Hello
+            td World
+            td 2

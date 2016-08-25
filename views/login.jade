@@ -1,10 +1,15 @@
 extends layout
 
 block content
-  h1 = title
-  form.form-horizontal(method="post", id="loginForm")
-    label Username
-    input.span3(id="username", type="text", name="User", placeholder="Enter your username")
-    label Password
-    input.span3(id="password", type="password", name="Password", placeholder="Enter your password")
-    input.btn(type="submit", value="Log In")
+  h1= title
+  div.container
+      img.img-circle("images/BJCTA_logo.png","Circle image")
+      form.form-horizontal(method="post", id="loginForm", name="login", action="/login")
+        label Username
+        input.span6(id="username", type="text", name="user", placeholder="Enter your username")
+        label Password
+        input.span6(id="password", type="password", name="password", placeholder="Enter your password")
+        br
+        br
+        input.btn(type="submit", value="Submit" align="centerline")
+      a(href="/changepwd") I forgot my password

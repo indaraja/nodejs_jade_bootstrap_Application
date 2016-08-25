@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1= title
+    div.container
+        form.form-horizontal(method="post", id="Changepwd", name="PwdChange", action="/changepwd")
+            label Username
+                input.span6(id="username", type="text", name="user", placeholder="Enter your username")
+            label Enter Password
+            input.span6(id="pwd", type="password", name="pwd", placeholder="Enter your password")
+            label Re-Enter Password
+            input.span6(id="re_pwd", type="password", name="re_pwd", placeholder="Re-Enter your password")
+            br
+            br
+            input.btn(type="submit", value="Save Changes" align="centerline")
