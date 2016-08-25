@@ -1,0 +1,13 @@
+extends layout
+
+block content
+
+    h1= title
+    form#formAddUser(name="adduser",method="post",action="/adduser")
+        input#inputUserName(type="text", placeholder="username", name="usrname")
+        br
+        input#inputUserPwd(type="password", placeholder="userpwd", name="pwd")
+        br
+        input#inputUserLoc(type="text", placeholder="userloc", name="loc")
+        br
+        button#btnSubmit(type="submit") submit
